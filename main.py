@@ -26,8 +26,8 @@ app = Flask(__name__)
 app.secret_key = "aaaaaa"
 
 ##AWS
-user_access_key = 'AKIA4JIMZG7UREVPEP4W'
-user_secret_key = '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'
+user_access_key = '[get ACCESS KEY from AWS USER]'
+user_secret_key = '[get SECRET KEY from AWS USER]'
 
 sts_client = boto3.client('sts',
                            aws_access_key_id=user_access_key,
