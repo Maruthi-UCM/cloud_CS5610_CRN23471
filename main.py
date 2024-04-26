@@ -24,11 +24,12 @@ admin_col = mydb['Admin']
 Payment_col=mydb['Payment']
 app = Flask(__name__)
 app.secret_key = "aaaaaa"
-
-##AWS
+user_access_key=''
+user_secret_key=''
+'''AWS
 user_access_key = '[get ACCESS KEY from AWS USER]'
 user_secret_key = '[get SECRET KEY from AWS USER]'
-
+''' #uncomment this and replace access key secret key from AWS user
 sts_client = boto3.client('sts',
                            aws_access_key_id=user_access_key,
                            aws_secret_access_key=user_secret_key)
